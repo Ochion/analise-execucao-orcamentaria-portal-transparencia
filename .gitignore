@@ -1,0 +1,19 @@
+# Ambientes virtuais
+.venv/
+.venv-2/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Dados brutos e derivados (muito grandes pro Git; a fonte publica ja esta documentada no README)
+dados_agosto_completo/*.csv
+
+# Credenciais / configuracao local
+*.json
+.env
+
+# VS Code
+.vscode/
