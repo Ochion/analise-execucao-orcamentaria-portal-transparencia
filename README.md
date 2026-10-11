@@ -3,6 +3,8 @@
 Projeto final EBAC × Semantix (Analista de Dados)
 Autor: Johan Manochio · GitHub: [Ochion](https://github.com/Ochion)
 
+**Stack:** Python, Pandas, scikit-learn, Google BigQuery, Looker Studio
+
 **Dashboard (Looker Studio):** [Abrir dashboard](https://datastudio.google.com/reporting/12a3e0c7-f740-4e62-9580-958aa2e74560)
 
 ---
@@ -21,7 +23,7 @@ O orçamento público federal movimenta centenas de bilhões de reais por mês, 
 
 | Item | Detalhe |
 |---|---|
-| Fonte | [Portal da Transparência — Despesas](https://portaldatransparencia.gov.br) (dados abertos, públicos e não confidenciais) |
+| Fonte | [Portal da Transparência — Despesas](https://portaldatransparencia.gov.br/download-de-dados/despesas) (dados abertos, públicos e não confidenciais) |
 | Período | 01/08/2026 a 31/08/2026 (31 arquivos diários) |
 | Tipo | Estruturado (CSV) |
 | Acesso | Download direto dos arquivos diários |
@@ -113,7 +115,7 @@ Os CSVs de dados não são versionados (`.gitignore`) por causa do tamanho; baix
 
 - **Total empenhado:** R$ 696,98 bi · **liquidado:** R$ 436,56 bi (62,6%) · **pago:** R$ 428,27 bi (61,4%).
 - **Concentração:** o Ministério da Fazenda lidera (R$ 426,56 bi), puxado pela rolagem da dívida mobiliária, com pico de R$ 387 bi em 27/08. Análises por órgão devem ser lidas com e sem a dívida.
-- **Despesas Correntes** (R$ 385,83 bi) superam as de **Capital** (R$ 311,14 bi).
+- **Despesas Correntes** (R$ 385,83 bi) superam as de **Capital** (R$ 311,14 bi). Cerca de 91% das Despesas de Capital do mês correspondem a amortização de dívida pública, não a investimento em infraestrutura.
 - **Gargalo de execução:** dos 205.378 empenhos, 116.740 estavam sem execução no fim do mês, 19.507 liquidados aguardando pagamento, 27.029 pagos parcialmente e 39.508 pagos integralmente.
 - **Empenhos simbólicos:** 531 empenhos (≤ R$ 100) tiveram pagamento muito maior, ligados a folha e serviço da dívida (empenho estimativo/global); somam só 0,24% do valor pago.
 - **Correlação moderada (0,66)** entre empenhado e pago indica que o valor empenhado, sozinho, não prevê o pagamento no mesmo mês.
