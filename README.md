@@ -64,6 +64,8 @@ O orçamento público federal movimenta centenas de bilhões de reais por mês, 
 4. Correlação empenhado × pago (Pearson = 0,6585)
 5. Série temporal diária
 
+Gráficos em [`graficos_eda/`](graficos_eda).
+
 **Modelo preditivo: o empenho será pago no mesmo mês?**
 
 - **Alvo:** `pago = valor_pago > 0` (32,8% dos empenhos). Base de modelagem: 202.784 empenhos (removidos 2.594 estornos/cancelamentos, valor ≤ 0). Split estratificado: 162.227 treino / 40.557 teste.
@@ -99,6 +101,7 @@ O orçamento público federal movimenta centenas de bilhões de reais por mês, 
 ├── exploracao.py, cruzamento.py, cruzar.execução.py
 ├── investigar.py, investigar.empenhos.simbolicos.py
 ├── eda.py                     # análise exploratória (5 análises)
+├── graficos_eda/              # gráficos das 5 análises exploratórias
 ├── tratamento_fase3.py        # limpeza e colunas derivadas
 ├── subir_bigquery.py          # carga da base tratada no BigQuery
 ├── modelo_pagamento.py        # modelo preditivo (Random Forest)
