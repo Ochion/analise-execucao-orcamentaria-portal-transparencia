@@ -1,6 +1,5 @@
 # Ambientes virtuais
-.venv/
-.venv-2/
+.venv*/
 venv/
 env/
 
@@ -9,10 +8,12 @@ __pycache__/
 *.pyc
 
 # Dados brutos e derivados (muito grandes pro Git; a fonte publica ja esta documentada no README)
-dados_agosto_completo/*.csv
+*.csv
+dados_agosto_completo/
 
 # Credenciais / configuracao local
 *.json
+!saidas_modelo/metricas.json
 .env
 
 # VS Code
